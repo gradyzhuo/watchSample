@@ -180,6 +180,22 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		794ABA751B50DC3500A02B2D /* FormViewController */ = {
+			isa = PBXGroup;
+			children = (
+				794ABA711B50591900A02B2D /* EntityFormViewController.swift */,
+			);
+			name = FormViewController;
+			sourceTree = "<group>";
+		};
+		794ABA761B50DC4E00A02B2D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				794ABA6F1B50569200A02B2D /* EntitiesManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
 		79533E8B1B4B05AF00FCB6DD = {
 			isa = PBXGroup;
 			children = (
@@ -243,11 +259,11 @@
 		7955A5A71B502EE800677F2E /* TodoEntity */ = {
 			isa = PBXGroup;
 			children = (
-				794ABA6F1B50569200A02B2D /* EntitiesManager.swift */,
+				794ABA761B50DC4E00A02B2D /* Manager */,
+				794ABA751B50DC3500A02B2D /* FormViewController */,
 				7955A5A81B502EFC00677F2E /* TodoEntity.swift */,
 				7955A5D41B503DBE00677F2E /* Storage+WatchSample.swift */,
 				794ABA6D1B50522A00A02B2D /* PriorityOption.swift */,
-				794ABA711B50591900A02B2D /* EntityFormViewController.swift */,
 			);
 			name = TodoEntity;
 			sourceTree = "<group>";
