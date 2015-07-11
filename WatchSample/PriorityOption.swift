@@ -19,20 +19,11 @@ class PriorityOption : NSObject, XLFormOptionObject {
     }
     
     func formDisplayText() -> String! {
-        switch self.priority.value {
-        case 1000:
-            return "High"
-        case 750:
-            return "Medium"
-        case 250:
-            return "Low"
-        default:
-            return "Normal"
-        }
+        return self.priority.formDisplayText()
     }
     
     func formValue() -> AnyObject! {
-        return self.priority.value
+        return self.priority.formValue()
     }
     
 }

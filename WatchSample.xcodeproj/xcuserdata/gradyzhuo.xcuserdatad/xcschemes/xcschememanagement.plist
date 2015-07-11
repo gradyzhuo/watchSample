@@ -4,10 +4,35 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Storage.xcscheme</key>
+		<key>Complication - Todo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Glance - Todo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>Notification - Todo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>5</integer>
+		</dict>
+		<key>Storage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>StorageWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>Todo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 		<key>WatchSample.xcscheme</key>
 		<dict>
@@ -33,6 +58,21 @@
 			<true/>
 		</dict>
 		<key>7939C68F1B4D729000081FAE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>794ABA781B50DCF000A02B2D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>794ABAB61B50E2E000A02B2D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>794ABAC31B50E31500A02B2D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

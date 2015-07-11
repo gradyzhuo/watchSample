@@ -7,7 +7,11 @@
 //
 
 import Foundation
+#if os(iOS)
 import Storage
+#else
+import StorageWatch
+#endif
 
 extension Storage {
     

@@ -7,8 +7,11 @@
 //
 
 import Foundation
+#if os(iOS)
 import Storage
-import XLForm
+#else
+import StorageWatch
+#endif
 
 enum EntityPriority {
     case priorityValue(Int)
@@ -26,6 +29,24 @@ enum EntityPriority {
     static var Medium = EntityPriority.priorityValue(750)
     static var Normal = EntityPriority.priorityValue(500)
     static var Low = EntityPriority.priorityValue(250)
+    
+    
+    func formDisplayText() -> String! {
+        switch self.value {
+        case 1000:
+            return "High"
+        case 750:
+            return "Medium"
+        case 250:
+            return "Low"
+        default:
+            return "Normal"
+        }
+    }
+    
+    func formValue() -> AnyObject! {
+        return self.value
+    }
 }
 
 

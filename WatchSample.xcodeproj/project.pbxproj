@@ -9,13 +9,34 @@
 /* Begin PBXBuildFile section */
 		30A3253505C8E511FF5F26CE /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FE1142331D1D7CE3E3CFB8 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		7939C65E1B4D5F3B00081FAE /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7939C65D1B4D5F3B00081FAE /* MainTableViewController.swift */; };
+		793C12A91B515F61003E59D3 /* EntitiesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794ABA6F1B50569200A02B2D /* EntitiesManager.swift */; };
+		793C12B31B51610E003E59D3 /* TodoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7955A5A81B502EFC00677F2E /* TodoEntity.swift */; };
+		793C12B41B51610E003E59D3 /* Storage+WatchSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7955A5D41B503DBE00677F2E /* Storage+WatchSample.swift */; };
+		793C12B61B517A75003E59D3 /* EntitiesDetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C12B51B517A75003E59D3 /* EntitiesDetailInterfaceController.swift */; };
+		7945562B1B5141CD0084F048 /* StorageWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 7945562A1B5141CD0084F048 /* StorageWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7945562C1B51420D0084F048 /* Defination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7955A5D11B50326900677F2E /* Defination.swift */; };
+		7945562D1B51420D0084F048 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7955A5AA1B502F8300677F2E /* Storage.swift */; };
+		7945562E1B51420D0084F048 /* StorageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7955A5CF1B50321900677F2E /* StorageCache.swift */; };
+		794556301B51451F0084F048 /* EntityRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945562F1B51451F0084F048 /* EntityRowController.swift */; };
 		794ABA6C1B504DEB00A02B2D /* NSDate+FormatString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794ABA6B1B504DEB00A02B2D /* NSDate+FormatString.swift */; };
 		794ABA6E1B50522A00A02B2D /* PriorityOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794ABA6D1B50522A00A02B2D /* PriorityOption.swift */; };
 		794ABA701B50569200A02B2D /* EntitiesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794ABA6F1B50569200A02B2D /* EntitiesManager.swift */; };
 		794ABA721B50591900A02B2D /* EntityFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794ABA711B50591900A02B2D /* EntityFormViewController.swift */; };
 		794ABA741B5069B200A02B2D /* EntityFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794ABA711B50591900A02B2D /* EntityFormViewController.swift */; };
+		794ABA7D1B50DCF000A02B2D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794ABA7B1B50DCF000A02B2D /* Interface.storyboard */; };
+		794ABA7F1B50DCF000A02B2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 794ABA7E1B50DCF000A02B2D /* Assets.xcassets */; };
+		794ABA861B50DCF000A02B2D /* Todo Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 794ABA851B50DCF000A02B2D /* Todo Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		794ABA8D1B50DCF000A02B2D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794ABA8C1B50DCF000A02B2D /* InterfaceController.swift */; };
+		794ABA8F1B50DCF000A02B2D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794ABA8E1B50DCF000A02B2D /* ExtensionDelegate.swift */; };
+		794ABA911B50DCF000A02B2D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794ABA901B50DCF000A02B2D /* NotificationController.swift */; };
+		794ABA931B50DCF000A02B2D /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794ABA921B50DCF000A02B2D /* GlanceController.swift */; };
+		794ABA951B50DCF000A02B2D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794ABA941B50DCF000A02B2D /* ComplicationController.swift */; };
+		794ABA971B50DCF000A02B2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 794ABA961B50DCF000A02B2D /* Assets.xcassets */; };
+		794ABA9B1B50DCF000A02B2D /* Todo.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 794ABA791B50DCF000A02B2D /* Todo.app */; };
+		794ABACF1B50E37E00A02B2D /* StorageWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 794ABAC41B50E31500A02B2D /* StorageWatch.framework */; };
+		794ABAD01B50E37E00A02B2D /* StorageWatch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 794ABAC41B50E31500A02B2D /* StorageWatch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		794ABAE51B50E79300A02B2D /* NSDate+FormatString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794ABA6B1B504DEB00A02B2D /* NSDate+FormatString.swift */; };
 		79533E981B4B05AF00FCB6DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79533E971B4B05AF00FCB6DD /* AppDelegate.swift */; };
-		79533E9A1B4B05AF00FCB6DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79533E991B4B05AF00FCB6DD /* ViewController.swift */; };
 		79533E9D1B4B05AF00FCB6DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79533E9B1B4B05AF00FCB6DD /* Main.storyboard */; };
 		79533E9F1B4B05AF00FCB6DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79533E9E1B4B05AF00FCB6DD /* Assets.xcassets */; };
 		79533EA21B4B05AF00FCB6DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79533EA01B4B05AF00FCB6DD /* LaunchScreen.storyboard */; };
@@ -34,6 +55,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		794ABA871B50DCF000A02B2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79533E8C1B4B05AF00FCB6DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 794ABA841B50DCF000A02B2D;
+			remoteInfo = "Todo Extension";
+		};
+		794ABA991B50DCF000A02B2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79533E8C1B4B05AF00FCB6DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 794ABA781B50DCF000A02B2D;
+			remoteInfo = Todo;
+		};
+		794ABAD11B50E37E00A02B2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79533E8C1B4B05AF00FCB6DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 794ABAC31B50E31500A02B2D;
+			remoteInfo = StorageWatch;
+		};
 		79533EA91B4B05B000FCB6DD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 79533E8C1B4B05AF00FCB6DD /* Project object */;
@@ -72,12 +114,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		794ABA9F1B50DCF000A02B2D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				794ABA861B50DCF000A02B2D /* Todo Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		794ABAD31B50E37E00A02B2D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				794ABAD01B50E37E00A02B2D /* StorageWatch.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		79533EE81B4B05B000FCB6DD /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
+				794ABA9B1B50DCF000A02B2D /* Todo.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,13 +164,29 @@
 		23C0426A04A8E00E99816436 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		63FE1142331D1D7CE3E3CFB8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7939C65D1B4D5F3B00081FAE /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		793C12B51B517A75003E59D3 /* EntitiesDetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntitiesDetailInterfaceController.swift; sourceTree = "<group>"; };
+		7945562A1B5141CD0084F048 /* StorageWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageWatch.h; sourceTree = "<group>"; };
+		7945562F1B51451F0084F048 /* EntityRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityRowController.swift; sourceTree = "<group>"; };
 		794ABA6B1B504DEB00A02B2D /* NSDate+FormatString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+FormatString.swift"; sourceTree = "<group>"; };
 		794ABA6D1B50522A00A02B2D /* PriorityOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityOption.swift; sourceTree = "<group>"; };
 		794ABA6F1B50569200A02B2D /* EntitiesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntitiesManager.swift; sourceTree = "<group>"; };
 		794ABA711B50591900A02B2D /* EntityFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityFormViewController.swift; sourceTree = "<group>"; };
+		794ABA791B50DCF000A02B2D /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		794ABA7C1B50DCF000A02B2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		794ABA7E1B50DCF000A02B2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		794ABA801B50DCF000A02B2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794ABA851B50DCF000A02B2D /* Todo Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Todo Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		794ABA8B1B50DCF000A02B2D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		794ABA8C1B50DCF000A02B2D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		794ABA8E1B50DCF000A02B2D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		794ABA901B50DCF000A02B2D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		794ABA921B50DCF000A02B2D /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		794ABA941B50DCF000A02B2D /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		794ABA961B50DCF000A02B2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		794ABA981B50DCF000A02B2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794ABAC41B50E31500A02B2D /* StorageWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StorageWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79533E941B4B05AF00FCB6DD /* WatchSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79533E971B4B05AF00FCB6DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79533E991B4B05AF00FCB6DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		79533E9C1B4B05AF00FCB6DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79533E9E1B4B05AF00FCB6DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79533EA11B4B05AF00FCB6DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -131,6 +212,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		794ABA821B50DCF000A02B2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794ABACF1B50E37E00A02B2D /* StorageWatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		794ABAC01B50E31500A02B2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		79533E911B4B05AF00FCB6DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,6 +292,41 @@
 			name = Manager;
 			sourceTree = "<group>";
 		};
+		794ABA7A1B50DCF000A02B2D /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				794ABA7B1B50DCF000A02B2D /* Interface.storyboard */,
+				794ABA7E1B50DCF000A02B2D /* Assets.xcassets */,
+				794ABA801B50DCF000A02B2D /* Info.plist */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		794ABA891B50DCF000A02B2D /* Todo Extension */ = {
+			isa = PBXGroup;
+			children = (
+				794ABA8C1B50DCF000A02B2D /* InterfaceController.swift */,
+				793C12B51B517A75003E59D3 /* EntitiesDetailInterfaceController.swift */,
+				794ABA8E1B50DCF000A02B2D /* ExtensionDelegate.swift */,
+				794ABA901B50DCF000A02B2D /* NotificationController.swift */,
+				794ABA921B50DCF000A02B2D /* GlanceController.swift */,
+				794ABA941B50DCF000A02B2D /* ComplicationController.swift */,
+				794ABA961B50DCF000A02B2D /* Assets.xcassets */,
+				794ABA981B50DCF000A02B2D /* Info.plist */,
+				794ABA8A1B50DCF000A02B2D /* Supporting Files */,
+				7945562F1B51451F0084F048 /* EntityRowController.swift */,
+			);
+			path = "Todo Extension";
+			sourceTree = "<group>";
+		};
+		794ABA8A1B50DCF000A02B2D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				794ABA8B1B50DCF000A02B2D /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		79533E8B1B4B05AF00FCB6DD = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +335,8 @@
 				79533EB61B4B05B000FCB6DD /* WatchSampleUITests */,
 				7955A5B21B5031CC00677F2E /* Storage */,
 				7955A5C01B5031CC00677F2E /* StorageTests */,
+				794ABA7A1B50DCF000A02B2D /* Todo */,
+				794ABA891B50DCF000A02B2D /* Todo Extension */,
 				79533E951B4B05AF00FCB6DD /* Products */,
 				FF59A418FE03A1A9CD121795 /* Frameworks */,
 				D6830B36B824C637D19FD259 /* Pods */,
@@ -218,6 +351,9 @@
 				79533EB31B4B05B000FCB6DD /* WatchSampleUITests.xctest */,
 				7955A5B11B5031CC00677F2E /* Storage.framework */,
 				7955A5BA1B5031CC00677F2E /* StorageTests.xctest */,
+				794ABA791B50DCF000A02B2D /* Todo.app */,
+				794ABA851B50DCF000A02B2D /* Todo Extension.appex */,
+				794ABAC41B50E31500A02B2D /* StorageWatch.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -229,7 +365,6 @@
 				7955A5A71B502EE800677F2E /* TodoEntity */,
 				79533E971B4B05AF00FCB6DD /* AppDelegate.swift */,
 				7939C65D1B4D5F3B00081FAE /* MainTableViewController.swift */,
-				79533E991B4B05AF00FCB6DD /* ViewController.swift */,
 				79533E9B1B4B05AF00FCB6DD /* Main.storyboard */,
 				79533E9E1B4B05AF00FCB6DD /* Assets.xcassets */,
 				79533EA01B4B05AF00FCB6DD /* LaunchScreen.storyboard */,
@@ -272,6 +407,7 @@
 			isa = PBXGroup;
 			children = (
 				7955A5B31B5031CC00677F2E /* Storage.h */,
+				7945562A1B5141CD0084F048 /* StorageWatch.h */,
 				7955A5D11B50326900677F2E /* Defination.swift */,
 				7955A5AA1B502F8300677F2E /* Storage.swift */,
 				7955A5CF1B50321900677F2E /* StorageCache.swift */,
@@ -309,6 +445,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		794ABAC11B50E31500A02B2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7945562B1B5141CD0084F048 /* StorageWatch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7955A5AE1B5031CC00677F2E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -320,6 +464,60 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		794ABA781B50DCF000A02B2D /* Todo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 794ABAA01B50DCF000A02B2D /* Build configuration list for PBXNativeTarget "Todo" */;
+			buildPhases = (
+				794ABA771B50DCF000A02B2D /* Resources */,
+				794ABA9F1B50DCF000A02B2D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				794ABA881B50DCF000A02B2D /* PBXTargetDependency */,
+			);
+			name = Todo;
+			productName = Todo;
+			productReference = 794ABA791B50DCF000A02B2D /* Todo.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		794ABA841B50DCF000A02B2D /* Todo Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 794ABA9C1B50DCF000A02B2D /* Build configuration list for PBXNativeTarget "Todo Extension" */;
+			buildPhases = (
+				794ABA811B50DCF000A02B2D /* Sources */,
+				794ABA821B50DCF000A02B2D /* Frameworks */,
+				794ABA831B50DCF000A02B2D /* Resources */,
+				794ABAD31B50E37E00A02B2D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				794ABAD21B50E37E00A02B2D /* PBXTargetDependency */,
+			);
+			name = "Todo Extension";
+			productName = "Todo Extension";
+			productReference = 794ABA851B50DCF000A02B2D /* Todo Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		794ABAC31B50E31500A02B2D /* StorageWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 794ABAC91B50E31500A02B2D /* Build configuration list for PBXNativeTarget "StorageWatch" */;
+			buildPhases = (
+				794ABABF1B50E31500A02B2D /* Sources */,
+				794ABAC01B50E31500A02B2D /* Frameworks */,
+				794ABAC11B50E31500A02B2D /* Headers */,
+				794ABAC21B50E31500A02B2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StorageWatch;
+			productName = StorageWatch;
+			productReference = 794ABAC41B50E31500A02B2D /* StorageWatch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		79533E931B4B05AF00FCB6DD /* WatchSample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79533EE91B4B05B000FCB6DD /* Build configuration list for PBXNativeTarget "WatchSample" */;
@@ -337,6 +535,7 @@
 			);
 			dependencies = (
 				7955A5C51B5031CC00677F2E /* PBXTargetDependency */,
+				794ABA9A1B50DCF000A02B2D /* PBXTargetDependency */,
 			);
 			name = WatchSample;
 			productName = WatchSample;
@@ -427,6 +626,15 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Grady Zhuo";
 				TargetAttributes = {
+					794ABA781B50DCF000A02B2D = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					794ABA841B50DCF000A02B2D = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					794ABAC31B50E31500A02B2D = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					79533E931B4B05AF00FCB6DD = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -463,13 +671,40 @@
 				79533E931B4B05AF00FCB6DD /* WatchSample */,
 				79533EA71B4B05B000FCB6DD /* WatchSampleTests */,
 				79533EB21B4B05B000FCB6DD /* WatchSampleUITests */,
-				7955A5B01B5031CC00677F2E /* Storage */,
 				7955A5B91B5031CC00677F2E /* StorageTests */,
+				794ABA781B50DCF000A02B2D /* Todo */,
+				794ABA841B50DCF000A02B2D /* Todo Extension */,
+				7955A5B01B5031CC00677F2E /* Storage */,
+				794ABAC31B50E31500A02B2D /* StorageWatch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		794ABA771B50DCF000A02B2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794ABA7F1B50DCF000A02B2D /* Assets.xcassets in Resources */,
+				794ABA7D1B50DCF000A02B2D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		794ABA831B50DCF000A02B2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794ABA971B50DCF000A02B2D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		794ABAC21B50E31500A02B2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		79533E921B4B05AF00FCB6DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -559,6 +794,34 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		794ABA811B50DCF000A02B2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794ABAE51B50E79300A02B2D /* NSDate+FormatString.swift in Sources */,
+				794556301B51451F0084F048 /* EntityRowController.swift in Sources */,
+				794ABA911B50DCF000A02B2D /* NotificationController.swift in Sources */,
+				793C12B31B51610E003E59D3 /* TodoEntity.swift in Sources */,
+				794ABA8F1B50DCF000A02B2D /* ExtensionDelegate.swift in Sources */,
+				793C12B41B51610E003E59D3 /* Storage+WatchSample.swift in Sources */,
+				794ABA951B50DCF000A02B2D /* ComplicationController.swift in Sources */,
+				793C12A91B515F61003E59D3 /* EntitiesManager.swift in Sources */,
+				794ABA8D1B50DCF000A02B2D /* InterfaceController.swift in Sources */,
+				793C12B61B517A75003E59D3 /* EntitiesDetailInterfaceController.swift in Sources */,
+				794ABA931B50DCF000A02B2D /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		794ABABF1B50E31500A02B2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7945562C1B51420D0084F048 /* Defination.swift in Sources */,
+				7945562D1B51420D0084F048 /* Storage.swift in Sources */,
+				7945562E1B51420D0084F048 /* StorageCache.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		79533E901B4B05AF00FCB6DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -567,7 +830,6 @@
 				794ABA721B50591900A02B2D /* EntityFormViewController.swift in Sources */,
 				794ABA6C1B504DEB00A02B2D /* NSDate+FormatString.swift in Sources */,
 				7955A5D51B503DBE00677F2E /* Storage+WatchSample.swift in Sources */,
-				79533E9A1B4B05AF00FCB6DD /* ViewController.swift in Sources */,
 				7939C65E1B4D5F3B00081FAE /* MainTableViewController.swift in Sources */,
 				7955A5A91B502EFC00677F2E /* TodoEntity.swift in Sources */,
 				79533E981B4B05AF00FCB6DD /* AppDelegate.swift in Sources */,
@@ -613,6 +875,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		794ABA881B50DCF000A02B2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 794ABA841B50DCF000A02B2D /* Todo Extension */;
+			targetProxy = 794ABA871B50DCF000A02B2D /* PBXContainerItemProxy */;
+		};
+		794ABA9A1B50DCF000A02B2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 794ABA781B50DCF000A02B2D /* Todo */;
+			targetProxy = 794ABA991B50DCF000A02B2D /* PBXContainerItemProxy */;
+		};
+		794ABAD21B50E37E00A02B2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 794ABAC31B50E31500A02B2D /* StorageWatch */;
+			targetProxy = 794ABAD11B50E37E00A02B2D /* PBXContainerItemProxy */;
+		};
 		79533EAA1B4B05B000FCB6DD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 79533E931B4B05AF00FCB6DD /* WatchSample */;
@@ -641,6 +918,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		794ABA7B1B50DCF000A02B2D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				794ABA7C1B50DCF000A02B2D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		79533E9B1B4B05AF00FCB6DD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -660,6 +945,159 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		794ABA9D1B50DCF000A02B2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Todo Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				OTHER_CFLAGS = "-DWATCH=1";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ofsky.WatchSample.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		794ABA9E1B50DCF000A02B2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Todo Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DWATCH=1";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ofsky.WatchSample.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		794ABAA11B50DCF000A02B2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Todo_Extension;
+				INFOPLIST_FILE = Todo/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ofsky.WatchSample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		794ABAA21B50DCF000A02B2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Todo_Extension;
+				INFOPLIST_FILE = Todo/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ofsky.WatchSample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		794ABACA1B50E31500A02B2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Storage/Info-Watch.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ofsky.StorageWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		794ABACB1B50E31500A02B2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Storage/Info-Watch.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ofsky.StorageWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
 		79533EE01B4B05B000FCB6DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -756,8 +1194,10 @@
 				INFOPLIST_FILE = Storage/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ofsky.Storage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos9.0;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -786,8 +1226,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ofsky.Storage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos9.0;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -915,6 +1357,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		794ABA9C1B50DCF000A02B2D /* Build configuration list for PBXNativeTarget "Todo Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794ABA9D1B50DCF000A02B2D /* Release */,
+				794ABA9E1B50DCF000A02B2D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		794ABAA01B50DCF000A02B2D /* Build configuration list for PBXNativeTarget "Todo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794ABAA11B50DCF000A02B2D /* Release */,
+				794ABAA21B50DCF000A02B2D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		794ABAC91B50E31500A02B2D /* Build configuration list for PBXNativeTarget "StorageWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794ABACA1B50E31500A02B2D /* Release */,
+				794ABACB1B50E31500A02B2D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		79533E8F1B4B05AF00FCB6DD /* Build configuration list for PBXProject "WatchSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

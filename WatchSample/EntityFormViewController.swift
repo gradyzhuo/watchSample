@@ -106,10 +106,10 @@ class EntityFormViewController: XLFormViewController {
         targetDateRow.value = self.entity?.targetDate ?? nowDate
         section.addFormRow(targetDateRow)
         
-        let alarmDateRow = XLFormRowDescriptor(tag: kFormValueAlarmDate, rowType: XLFormRowDescriptorTypeDateTime, title: "Alarm Date")
-        alarmDateRow.noValueDisplayText = nowDate.formatDateString()
-        alarmDateRow.value = self.entity?.alarmDate ?? nowDate
-        section.addFormRow(alarmDateRow)
+//        let alarmDateRow = XLFormRowDescriptor(tag: kFormValueAlarmDate, rowType: XLFormRowDescriptorTypeDateTime, title: "Alarm Date")
+//        alarmDateRow.noValueDisplayText = nowDate.formatDateString()
+//        alarmDateRow.value = self.entity?.alarmDate ?? nowDate
+//        section.addFormRow(alarmDateRow)
         
         form.addFormSection(section)
         

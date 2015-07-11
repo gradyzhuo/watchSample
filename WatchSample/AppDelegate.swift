@@ -7,15 +7,24 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if WCSession.isSupported() {
+            
+            WCSession.defaultSession().delegate = self
+            WCSession.defaultSession().activateSession()
+            
+        }
+        
         
         return true
     }
@@ -46,6 +55,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         EntitiesManager.defaultManager().synchronize()
     }
 
+    
+    func session(session: WCSession, didReceiveUserInfo userInfo: [String : AnyObject]) {
+        
+        let manager = EntitiesManager.defaultManager()
+        
+        for (key, value) in userInfo {
+            
+            let entity = Entity(dataDict: value as! [String:AnyObject])
+            
+            if key == EntitiesManagerNotificationUserInfoKeyAdd {
+                manager.addEntity(entity, transferUserInfo: false)
+            }else{
+                manager.removeEntity(entity, transferUserInfo: false)
+            }
+        }
+        manager.synchronize()
+        
+        NSNotificationCenter.defaultCenter().postNotificationName(EntitiesManagerNotificationName, object: self, userInfo: userInfo)
 
+    }
+    
+    
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+        
+        
+        let alert = UIAlertController(title: message["title"] as? String, message: message["message"] as? String, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "CallBack", style: UIAlertActionStyle.Default, handler: { (action) -> Void in
+            
+            replyHandler(["title":"Message From iOS"])
+            
+        }))
+        
+        dispatch_async(dispatch_get_main_queue()) { () -> Void in
+            self.window?.rootViewController?.presentViewController(alert, animated: true, completion: nil)
+        }
+        
+        
+        
+    }
+    
 }
 

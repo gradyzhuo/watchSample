@@ -7,7 +7,18 @@
 //
 
 import Foundation
+
+import WatchConnectivity
+
+#if os(iOS)
 import Storage
+#else
+import StorageWatch
+#endif
+
+let EntitiesManagerNotificationName = "EntitiesManagerNotificationName"
+let EntitiesManagerNotificationUserInfoKeyAdd = "EntitiesManagerNotificationUserInfoKeyAdd"
+let EntitiesManagerNotificationUserInfoKeyRemove = "EntitiesManagerNotificationUserInfoKeyRemove"
 
 class EntitiesManager {
     
@@ -17,19 +28,60 @@ class EntitiesManager {
         return s
     }()
     
-    
     private static let singleton = EntitiesManager()
     
     class func defaultManager()->EntitiesManager{
         return singleton
     }
     
-    func addEntity(entity:Entity){
+    func addEntity(entity:Entity, transferUserInfo:Bool = true){
         self.storage.addObject(entity)
+        
+        if transferUserInfo {
+            let session = WCSession.defaultSession()
+            
+            session.transferUserInfo([EntitiesManagerNotificationUserInfoKeyAdd:entity.dataDict])
+            do{
+                try session.updateApplicationContext(entity.dataDict)
+            }catch{
+                print("when updateApplicationContext error happened. [Error]:\(error)")
+            }
+        }
+        
     }
     
-    func removeEntity(entity:Entity){
+    func removeEntity(entity:Entity, transferUserInfo:Bool = true){
+        
+
+        let session = WCSession.defaultSession()
+        
+        if transferUserInfo {
+            self.getEntities { (entities) -> Void in
+            
+            
+                let existEntities = entities.filter({ (existEntity) -> Bool in
+                    return entity != existEntity
+                })
+                
+                if let topEntity = existEntities.first {
+                    
+                    do{
+                        try session.updateApplicationContext(topEntity.dataDict)
+                    }catch{
+                        print("when updateApplicationContext error happened. [Error]:\(error)")
+                    }
+                    
+                }
+            }
+            
+        }
+        
         self.storage.removeObject(entity)
+        if transferUserInfo {
+            session.transferUserInfo([EntitiesManagerNotificationUserInfoKeyRemove:entity.dataDict])
+        }
+
+        
     }
     
     func getEntities(completionHandler:(entities:Entities)->Void){

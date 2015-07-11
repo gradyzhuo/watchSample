@@ -24,6 +24,9 @@ class MainTableViewController: UITableViewController {
         
         self.reloadData()
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reloadData", name: EntitiesManagerNotificationName, object: nil)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,8 +66,11 @@ class MainTableViewController: UITableViewController {
     func reloadData(){
         
         self.manager.getEntities {[weak self] (entities) -> Void in
-            self?.entities = entities
-            self?.tableView.reloadData()
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self?.entities = entities
+                self?.tableView.reloadData()
+            })
+            
         }
         
     }
@@ -104,12 +110,14 @@ class MainTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
-            let entity = self.entities[indexPath.row]
+            print("self.entities:\(self.entities), indexPath.row:\(indexPath)")
+            let entity = self.entities.removeAtIndex(indexPath.row)
             self.manager.removeEntity(entity)
-            self.entities.removeAtIndex(indexPath.row)
             
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         }
+        
+        self.manager.synchronize()
     }
     
     
@@ -132,11 +140,9 @@ extension MainTableViewController : EntityFormViewControllerDelegate{
             entity.dataDict = dataDict
         }else{
             self.manager.addEntity(Entity(dataDict: dataDict))
-            
         }
-        
         self.reloadData()
-
+        self.manager.synchronize()
         
     }
 

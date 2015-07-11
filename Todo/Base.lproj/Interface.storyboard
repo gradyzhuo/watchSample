@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8152.3" systemVersion="15A216g" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc" defaultGlanceController="0uZ-2p-rRc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8077.2"/>
+    </dependencies>
+    <scenes>
+        <!--EntitiesListInterfaceController-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="EntitiesListInterfaceController" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Todo_Extension">
+                    <items>
+                        <table alignment="left" id="Tbt-l3-9nE">
+                            <items>
+                                <tableRow identifier="EntityRow" id="bPR-l1-1nA" customClass="EntityRowController" customModule="Todo_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="33Y-eP-Ud5">
+                                        <items>
+                                            <label width="136" height="57" alignment="left" text="Label" id="2jK-K7-1Pd"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="labelObject" destination="2jK-K7-1Pd" id="w3j-vH-BYO"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <label width="136" height="63" alignment="left" alpha="0.0" text="No Entities" textAlignment="center" id="fdp-dc-Tum"/>
+                    </items>
+                    <menu key="menu" id="O1A-74-BOc">
+                        <items>
+                            <menuItem title="Connect to iOS" icon="info" id="9hW-lw-bS3">
+                                <connections>
+                                    <action selector="connectToiOS" destination="AgC-eL-Hgc" id="Srm-5h-00z"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="entitiesTable" destination="Tbt-l3-9nE" id="UYV-es-DOa"/>
+                        <outlet property="noEntitiesTipLabel" destination="fdp-dc-Tum" id="ZZr-Cp-BI6"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="346.5"/>
+        </scene>
+        <!--EntitiesDetailInterfaceController-->
+        <scene sceneID="bIW-su-U90">
+            <objects>
+                <controller identifier="EntitiesDetailInterfaceController" hidesWhenLoading="NO" id="Eeh-l9-hd1" customClass="EntitiesDetailInterfaceController" customModule="Todo_Extension">
+                    <items>
+                        <group width="1" height="10" alignment="left" id="QnL-Hf-n4W"/>
+                        <group alignment="left" layout="vertical" id="ube-3A-yPu">
+                            <items>
+                                <group width="1" alignment="left" id="lx1-8N-AzG">
+                                    <items>
+                                        <label width="0.40000000000000002" widthAdjustment="1" alignment="left" text="Subject" id="IJ2-PK-JPV">
+                                            <fontDescription key="font" type="system" weight="black" pointSize="13"/>
+                                        </label>
+                                        <label width="0.5" alignment="left" text="Label" numberOfLines="0" id="cnW-Ng-ujJ"/>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="nD1-gk-j84"/>
+                                <group width="1" alignment="left" id="uSF-qF-exk">
+                                    <items>
+                                        <label width="0.40000000000000002" widthAdjustment="1" alignment="left" text="Priority" id="ysH-Ls-b9d">
+                                            <fontDescription key="font" type="system" weight="black" pointSize="14"/>
+                                        </label>
+                                        <label width="0.5" alignment="left" text="Label" id="cUA-6P-ch1"/>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="gCt-7a-Sx6"/>
+                                <group width="1" alignment="left" id="ECY-qW-T9b">
+                                    <items>
+                                        <label width="0.40000000000000002" widthAdjustment="1" alignment="left" text="Date" id="mtY-iB-Eyv">
+                                            <fontDescription key="font" type="system" weight="black" pointSize="14"/>
+                                        </label>
+                                        <label width="0.59999999999999998" alignment="left" text="Label" numberOfLines="0" id="JCx-xf-l7A"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="GbT-F0-rpH"/>
+                    </items>
+                    <menu key="menu" id="Nb5-8I-4JY">
+                        <items>
+                            <menuItem title="Delete" icon="trash" id="HaZ-UX-Ynf">
+                                <connections>
+                                    <action selector="delete" destination="Eeh-l9-hd1" id="DC2-GA-Bq3"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="priorityLabel" destination="cUA-6P-ch1" id="aJG-ng-J17"/>
+                        <outlet property="subjectLabel" destination="cnW-Ng-ujJ" id="GKq-yX-KYL"/>
+                        <outlet property="targetDateLabel" destination="JCx-xf-l7A" id="bgs-qv-abq"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="417" y="337.5"/>
+        </scene>
+        <!--GlanceController-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController identifier="GlanceController" spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="Todo_Extension">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y">
+                            <items>
+                                <label width="136" height="1" alignment="left" text="Lestest" id="kGD-89-zei">
+                                    <fontDescription key="font" type="system" weight="heavy" pointSize="23"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group alignment="left" layout="vertical" id="uCw-4Q-Ouw">
+                            <items>
+                                <group width="1" alignment="left" id="Bgt-fY-Fhf">
+                                    <items>
+                                        <label width="0.40000000000000002" widthAdjustment="1" alignment="left" text="Subject" id="VGs-Kc-hxv">
+                                            <fontDescription key="font" type="system" weight="black" pointSize="13"/>
+                                        </label>
+                                        <label width="0.5" alignment="left" text="Label" numberOfLines="0" id="gau-jB-V4w"/>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="bvM-pl-m1z"/>
+                                <group width="1" alignment="left" id="pAv-4l-tqw">
+                                    <items>
+                                        <label width="0.40000000000000002" widthAdjustment="1" alignment="left" text="Priority" id="hZV-C4-HOJ">
+                                            <fontDescription key="font" type="system" weight="black" pointSize="14"/>
+                                        </label>
+                                        <label width="0.5" alignment="left" text="Label" id="XLh-co-yEq"/>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="b9e-cK-Hob"/>
+                                <group width="1" alignment="left" id="Fsc-eh-xU2">
+                                    <items>
+                                        <label width="0.40000000000000002" widthAdjustment="1" alignment="left" text="Date" id="wPg-Zd-CZw">
+                                            <fontDescription key="font" type="system" weight="black" pointSize="14"/>
+                                        </label>
+                                        <label width="0.59999999999999998" alignment="left" text="Label" numberOfLines="0" id="2bl-Uw-zNc"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="priorityLabel" destination="XLh-co-yEq" id="efP-L4-cgh"/>
+                        <outlet property="subjectLabel" destination="gau-jB-V4w" id="wX6-GR-xxB"/>
+                        <outlet property="targetDateLabel" destination="2bl-Uw-zNc" id="ZOa-XF-IWq"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="672"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="Todo_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+    </scenes>
+</document>
