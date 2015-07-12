@@ -10,7 +10,7 @@ import UIKit
 import WatchConnectivity
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
@@ -54,8 +54,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         EntitiesManager.defaultManager().synchronize()
     }
-
     
+}
+
+//Implement WCSessionDelegate
+extension AppDelegate : WCSessionDelegate {
+    
+    //handle data when receives UserInfo from sender slide.
     func session(session: WCSession, didReceiveUserInfo userInfo: [String : AnyObject]) {
         
         let manager = EntitiesManager.defaultManager()
@@ -73,10 +78,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         manager.synchronize()
         
         NSNotificationCenter.defaultCenter().postNotificationName(EntitiesManagerNotificationName, object: self, userInfo: userInfo)
-
+        
     }
     
-    
+    //handle message from sender slide.
     func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
         
         
@@ -91,8 +96,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         dispatch_async(dispatch_get_main_queue()) { () -> Void in
             self.window?.rootViewController?.presentViewController(alert, animated: true, completion: nil)
         }
-        
-        
         
     }
     

@@ -46,8 +46,9 @@ class InterfaceController: WKInterfaceController {
     }
     
     
+    //MARK: - Reload UI and Data
     func reloadTableData(refreshSource:Bool = false){
-
+        
         
         let reloadTableControllerAction:()->Void = {
             
@@ -103,9 +104,9 @@ class InterfaceController: WKInterfaceController {
         
         let session = WCSession.defaultSession()
         
-        //先檢查是否可以reach
+        //先檢查是否reachable
         if session.reachable {
-            //再send Message 到 另一端系統
+            //send Message 
             session.sendMessage(["title":"Message From Watch"], replyHandler: { (userInfo) -> Void in
                 
                 

@@ -20,6 +20,7 @@ let EntitiesManagerNotificationName = "EntitiesManagerNotificationName"
 let EntitiesManagerNotificationUserInfoKeyAdd = "EntitiesManagerNotificationUserInfoKeyAdd"
 let EntitiesManagerNotificationUserInfoKeyRemove = "EntitiesManagerNotificationUserInfoKeyRemove"
 
+//A singleton manager to manage Entities
 class EntitiesManager {
     
     let storage:Storage<Entity> = {
@@ -34,6 +35,7 @@ class EntitiesManager {
         return singleton
     }
     
+    /// add entity and should send to recevier slide?
     func addEntity(entity:Entity, transferUserInfo:Bool = true){
         self.storage.addObject(entity)
         
@@ -50,6 +52,7 @@ class EntitiesManager {
         
     }
     
+    /// remove entity and should send to recevier slide?
     func removeEntity(entity:Entity, transferUserInfo:Bool = true){
         
 

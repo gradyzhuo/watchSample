@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import WatchSample
 
 class WatchSampleTests: XCTestCase {
     

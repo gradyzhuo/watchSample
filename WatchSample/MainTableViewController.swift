@@ -19,11 +19,14 @@ class MainTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Setup
         let addBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: "add:")
         self.navigationItem.rightBarButtonItem = addBarButtonItem
         
+        
         self.reloadData()
         
+        // observe Notification when storage is changed
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "reloadData", name: EntitiesManagerNotificationName, object: nil)
         
         
@@ -110,7 +113,6 @@ class MainTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
-            print("self.entities:\(self.entities), indexPath.row:\(indexPath)")
             let entity = self.entities.removeAtIndex(indexPath.row)
             self.manager.removeEntity(entity)
             

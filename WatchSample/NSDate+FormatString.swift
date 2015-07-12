@@ -8,6 +8,7 @@
 
 import Foundation
 
+//Extend NSDate to support converting to date format string.
 extension NSDate {
     func formatDateString()->String{
         let formatter = NSDateFormatter()

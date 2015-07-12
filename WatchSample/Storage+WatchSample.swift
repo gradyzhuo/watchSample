@@ -13,6 +13,7 @@ import Storage
 import StorageWatch
 #endif
 
+//Extend Storage to support Watch Sample
 extension Storage {
     
     var userDefaults:NSUserDefaults {

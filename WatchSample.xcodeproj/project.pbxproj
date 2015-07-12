@@ -268,12 +268,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		794ABA6A1B504DD700A02B2D /* Extensions */ = {
+		794ABA6A1B504DD700A02B2D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				794ABA6B1B504DEB00A02B2D /* NSDate+FormatString.swift */,
 			);
-			name = Extensions;
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		794ABA751B50DC3500A02B2D /* FormViewController */ = {
@@ -361,7 +361,7 @@
 		79533E961B4B05AF00FCB6DD /* WatchSample */ = {
 			isa = PBXGroup;
 			children = (
-				794ABA6A1B504DD700A02B2D /* Extensions */,
+				794ABA6A1B504DD700A02B2D /* Utilities */,
 				7955A5A71B502EE800677F2E /* TodoEntity */,
 				79533E971B4B05AF00FCB6DD /* AppDelegate.swift */,
 				7939C65D1B4D5F3B00081FAE /* MainTableViewController.swift */,
