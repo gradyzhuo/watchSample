@@ -7,7 +7,8 @@
 //
 
 import XCTest
-import WatchSample
+@testable import WatchSample
+@testable import Todo
 
 class WatchSampleTests: XCTestCase {
     

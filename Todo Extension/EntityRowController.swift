@@ -9,6 +9,7 @@
 import Foundation
 import WatchKit
 
+//Row Controller to show a Entity subject
 class EntityRowController: NSObject {
     
     @IBOutlet var labelObject:WKInterfaceLabel!

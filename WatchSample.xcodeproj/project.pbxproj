@@ -166,7 +166,7 @@
 		7939C65D1B4D5F3B00081FAE /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		793C12B51B517A75003E59D3 /* EntitiesDetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntitiesDetailInterfaceController.swift; sourceTree = "<group>"; };
 		7945562A1B5141CD0084F048 /* StorageWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageWatch.h; sourceTree = "<group>"; };
-		7945562F1B51451F0084F048 /* EntityRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityRowController.swift; sourceTree = "<group>"; };
+		7945562F1B51451F0084F048 /* EntityRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntityRowController.swift; path = "Todo Extension/EntityRowController.swift"; sourceTree = "<group>"; };
 		794ABA6B1B504DEB00A02B2D /* NSDate+FormatString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+FormatString.swift"; sourceTree = "<group>"; };
 		794ABA6D1B50522A00A02B2D /* PriorityOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityOption.swift; sourceTree = "<group>"; };
 		794ABA6F1B50569200A02B2D /* EntitiesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntitiesManager.swift; sourceTree = "<group>"; };
@@ -305,6 +305,7 @@
 		794ABA891B50DCF000A02B2D /* Todo Extension */ = {
 			isa = PBXGroup;
 			children = (
+				79FBD5021B525FD20077583B /* Row Controller */,
 				794ABA8C1B50DCF000A02B2D /* InterfaceController.swift */,
 				793C12B51B517A75003E59D3 /* EntitiesDetailInterfaceController.swift */,
 				794ABA8E1B50DCF000A02B2D /* ExtensionDelegate.swift */,
@@ -314,7 +315,6 @@
 				794ABA961B50DCF000A02B2D /* Assets.xcassets */,
 				794ABA981B50DCF000A02B2D /* Info.plist */,
 				794ABA8A1B50DCF000A02B2D /* Supporting Files */,
-				7945562F1B51451F0084F048 /* EntityRowController.swift */,
 			);
 			path = "Todo Extension";
 			sourceTree = "<group>";
@@ -423,6 +423,15 @@
 				7955A5C31B5031CC00677F2E /* Info.plist */,
 			);
 			path = StorageTests;
+			sourceTree = "<group>";
+		};
+		79FBD5021B525FD20077583B /* Row Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7945562F1B51451F0084F048 /* EntityRowController.swift */,
+			);
+			name = "Row Controller";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		D6830B36B824C637D19FD259 /* Pods */ = {

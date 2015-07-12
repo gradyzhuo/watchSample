@@ -22,11 +22,15 @@ class InterfaceController: WKInterfaceController {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
-
+        
         if let context = context as? Entities {
+            // 如果有context，且可以傳型成 Entities
+            // 就直接更新現在的Entities
             self.entities = context
+            //並刷新 table 的 data
             self.reloadTableData()
         }else{
+            //沒有就代表第一次進入，就直接從現在的Manager更新Table
             self.reloadTableData(true)
         }
         
@@ -108,7 +112,6 @@ class InterfaceController: WKInterfaceController {
         if session.reachable {
             //send Message 
             session.sendMessage(["title":"Message From Watch"], replyHandler: { (userInfo) -> Void in
-                
                 
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     self.presentAlertControllerWithTitle(userInfo["title"] as? String, message: userInfo["message"] as? String, preferredStyle: WKAlertControllerStyle.Alert, actions: [WKAlertAction(title: "OK", style: WKAlertActionStyle.Default, handler: { () -> Void in
